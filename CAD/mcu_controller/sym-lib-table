@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/teensy_library-master/teensy.lib)(options "")(descr ""))
+  (lib (name mcu_controller-rescue)(type Legacy)(uri ${KIPRJMOD}/mcu_controller-rescue.lib)(options "")(descr ""))
+  (lib (name mcu_controller)(type Legacy)(uri ${KIPRJMOD}/symbols/mcu_controller.lib)(options "")(descr ""))
+)

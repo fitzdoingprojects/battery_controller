@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name teensy)(type KiCad)(uri /media/fitz/Data/Dropbox/Projects/EE/battery_controller/CAD/mcu_controller/teensy.pretty)(options "")(descr ""))
+)
