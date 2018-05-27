@@ -345,36 +345,36 @@ OP_12V
 $Comp
 L Device:L_Small L10
 U 1 1 5AEA5C86
-P 6350 3250
-F 0 "L10" V 6535 3250 50  0000 C CNN
-F 1 "JUMPER" V 6444 3250 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 6350 3250 50  0001 C CNN
-F 3 "~" H 6350 3250 50  0001 C CNN
-	1    6350 3250
+P 5950 3250
+F 0 "L10" V 6135 3250 50  0000 C CNN
+F 1 "JUMPER" V 6044 3250 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5950 3250 50  0001 C CNN
+F 3 "~" H 5950 3250 50  0001 C CNN
+	1    5950 3250
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6600 3600 6600 3550
+	6300 3600 6300 3550
 $Comp
 L power:GND #PWR0151
 U 1 1 5B16F507
-P 6600 3600
-F 0 "#PWR0151" H 6600 3350 50  0001 C CNN
-F 1 "GND" H 6605 3427 50  0000 C CNN
-F 2 "" H 6600 3600 50  0001 C CNN
-F 3 "" H 6600 3600 50  0001 C CNN
-	1    6600 3600
+P 6300 3600
+F 0 "#PWR0151" H 6300 3350 50  0001 C CNN
+F 1 "GND" H 6305 3427 50  0000 C CNN
+F 2 "" H 6300 3600 50  0001 C CNN
+F 3 "" H 6300 3600 50  0001 C CNN
+	1    6300 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C21
 U 1 1 5B148D1E
-P 6600 3450
-F 0 "C21" V 6371 3450 50  0000 C CNN
-F 1 "0.1uF" V 6462 3450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6600 3450 50  0001 C CNN
-F 3 "~" H 6600 3450 50  0001 C CNN
-	1    6600 3450
+P 6300 3450
+F 0 "C21" V 6071 3450 50  0000 C CNN
+F 1 "0.1uF" V 6162 3450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6300 3450 50  0001 C CNN
+F 3 "~" H 6300 3450 50  0001 C CNN
+	1    6300 3450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -391,13 +391,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5AEC2B7B
-P 3850 1150
-F 0 "J2" H 3770 1367 50  0000 C CNN
-F 1 "PSU" H 3770 1276 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 3850 1150 50  0001 C CNN
-F 3 "~" H 3850 1150 50  0001 C CNN
-	1    3850 1150
-	-1   0    0    -1  
+P 3850 1250
+F 0 "J2" H 3770 1467 50  0000 C CNN
+F 1 "PSU" H 3770 1376 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 3850 1250 50  0001 C CNN
+F 3 "~" H 3850 1250 50  0001 C CNN
+	1    3850 1250
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J4
@@ -641,8 +641,6 @@ $EndComp
 Wire Wire Line
 	5700 3400 5700 3250
 Wire Wire Line
-	5700 3250 5650 3250
-Wire Wire Line
 	4650 3250 4650 3350
 Connection ~ 4650 3250
 $Comp
@@ -675,21 +673,16 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR0112
 U 1 1 5B170054
-P 5650 3000
-F 0 "#PWR0112" H 5650 2850 50  0001 C CNN
-F 1 "+12V" H 5665 3173 50  0000 C CNN
-F 2 "" H 5650 3000 50  0001 C CNN
-F 3 "" H 5650 3000 50  0001 C CNN
-	1    5650 3000
+P 6200 3050
+F 0 "#PWR0112" H 6200 2900 50  0001 C CNN
+F 1 "+12V" H 6215 3223 50  0000 C CNN
+F 2 "" H 6200 3050 50  0001 C CNN
+F 3 "" H 6200 3050 50  0001 C CNN
+	1    6200 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 3000 5650 3250
-Wire Wire Line
-	6450 3250 6600 3250
-Connection ~ 5650 3250
-Wire Wire Line
-	5500 3250 5650 3250
+	6050 3250 6200 3250
 Wire Wire Line
 	5850 4850 6050 4850
 $Comp
@@ -1014,17 +1007,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 1300 5200 1150
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J6
-U 1 1 5AEDB84F
-P 6950 6600
-F 0 "J6" V 7000 6780 50  0000 L CNN
-F 1 "Conn_02x03_Counter_Clockwise" V 7045 6780 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 6950 6600 50  0001 C CNN
-F 3 "~" H 6950 6600 50  0001 C CNN
-	1    6950 6600
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small R26
 U 1 1 5AEEFE8F
 P 6950 6100
@@ -1042,7 +1024,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 6300 7050 6400
 Wire Wire Line
-	6950 6200 6950 6400
+	6950 6200 6950 6300
 Wire Wire Line
 	6600 6200 6600 6300
 Wire Wire Line
@@ -1062,20 +1044,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 6900 6850 7050
 Connection ~ 6850 7050
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J3
-U 1 1 5AF4CC44
-P 5650 5350
-F 0 "J3" H 5700 5117 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" V 5745 5530 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 5650 5350 50  0001 C CNN
-F 3 "~" H 5650 5350 50  0001 C CNN
-	1    5650 5350
-	-1   0    0    1   
-$EndComp
 Connection ~ 5700 3250
-Wire Wire Line
-	5700 3250 6100 3250
 Wire Wire Line
 	4200 1500 4200 1250
 Wire Wire Line
@@ -1431,29 +1400,8 @@ Wire Wire Line
 	4650 4850 4650 5000
 Connection ~ 4950 4850
 Wire Wire Line
-	6100 4200 4650 4200
-Wire Wire Line
 	4650 4200 4650 4850
-Wire Wire Line
-	6100 3250 6100 4200
-Connection ~ 6100 3250
-Wire Wire Line
-	6100 3250 6250 3250
 Connection ~ 4650 4850
-Wire Wire Line
-	4650 4200 4650 4150
-Connection ~ 4650 4200
-$Comp
-L power:+12V #PWR0113
-U 1 1 5B529B72
-P 4650 4150
-F 0 "#PWR0113" H 4650 4000 50  0001 C CNN
-F 1 "+12V" H 4665 4323 50  0000 C CNN
-F 2 "" H 4650 4150 50  0001 C CNN
-F 3 "" H 4650 4150 50  0001 C CNN
-	1    4650 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4950 3000 4650 3000
 Wire Wire Line
@@ -1645,7 +1593,7 @@ U 1 1 5B814291
 P 8750 8600
 F 0 "L1" V 8935 8600 50  0000 C CNN
 F 1 "L_Small" V 8844 8600 50  0000 C CNN
-F 2 "Inductor_SMD:L_0402_1005Metric" H 8750 8600 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8750 8600 50  0001 C CNN
 F 3 "~" H 8750 8600 50  0001 C CNN
 	1    8750 8600
 	0    -1   -1   0   
@@ -1659,7 +1607,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 6950 10350 6950
 Wire Wire Line
-	6600 3250 6600 3350
+	6300 3250 6300 3350
 Wire Wire Line
 	9250 6100 9250 6850
 Connection ~ 9250 6850
@@ -1838,7 +1786,7 @@ Text Notes 9250 3700 0    50   ~ 0
 GND close to sense resistors\n
 Wire Wire Line
 	6800 3250 6600 3250
-Connection ~ 6600 3250
+Connection ~ 6300 3250
 Wire Wire Line
 	10350 6100 10350 6950
 Connection ~ 10350 6950
@@ -1916,4 +1864,47 @@ Text Label 12550 5550 1    50   ~ 0
 chrg_in_v
 Text Notes 12600 6000 0    50   ~ 0
 MUST CONNECT TO FB PIN AND INPUT VOLTAGE\nON BOOST CONVERTER\n
+Wire Wire Line
+	5700 3250 5850 3250
+Wire Wire Line
+	6600 3250 6600 4200
+Wire Wire Line
+	4650 4200 6600 4200
+Connection ~ 6600 3250
+Wire Wire Line
+	6600 3250 6300 3250
+Wire Wire Line
+	6200 3050 6200 3250
+Connection ~ 6200 3250
+Wire Wire Line
+	6200 3250 6300 3250
+Wire Wire Line
+	5500 3250 5700 3250
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 5B15D3FB
+P 5550 5350
+F 0 "J3" H 5600 5117 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 5600 5576 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 5550 5350 50  0001 C CNN
+F 3 "~" H 5550 5350 50  0001 C CNN
+	1    5550 5350
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J6
+U 1 1 5B15DA56
+P 6950 6700
+F 0 "J6" V 7000 6880 50  0000 L CNN
+F 1 "Conn_02x03_Odd_Even" H 7000 6926 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 6950 6700 50  0001 C CNN
+F 3 "~" H 6950 6700 50  0001 C CNN
+	1    6950 6700
+	0    1    -1   0   
+$EndComp
+Connection ~ 7050 6300
+Connection ~ 6950 6300
+Wire Wire Line
+	6950 6300 6950 6400
+Connection ~ 6850 6300
 $EndSCHEMATC
