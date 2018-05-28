@@ -157,8 +157,6 @@ F 3 "~" H 6450 2850 50  0001 C CNN
 	1    6450 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7450 2850 7750 2850
 $Comp
 L Device:D_Zener_Small D4
 U 1 1 5AE01766
@@ -1001,7 +999,7 @@ F 1 "MCU_EN" H 2220 3876 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2300 3550 50  0001 C CNN
 F 3 "~" H 2300 3550 50  0001 C CNN
 	1    2300 3550
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x05 J4
@@ -1466,7 +1464,7 @@ Connection ~ 6450 3050
 Wire Wire Line
 	6450 3050 6450 3200
 Wire Wire Line
-	7550 2550 9750 2550
+	7550 2550 7750 2550
 $Comp
 L Device:R_Small R19
 U 1 1 5B0B9825
@@ -1480,11 +1478,6 @@ F 3 "~" H 7750 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7750 3150 7750 3250
-Wire Wire Line
-	7750 2950 7750 2850
-Connection ~ 7750 2850
-Wire Wire Line
-	7750 2850 8300 2850
 $Comp
 L Mechanical:Mounting_Hole MK1
 U 1 1 5B19D9BA
@@ -1531,4 +1524,51 @@ F 3 "" H 3250 10400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 2000 3700 2050
+Text Label 2600 1350 0    50   ~ 0
+VIN
+Text Label 3200 1350 0    50   ~ 0
+VIN_FUSED
+Text Label 5400 1350 0    50   ~ 0
+VBB
+Text Label 8050 2550 0    50   ~ 0
+OUT1
+Text Label 7950 2850 0    50   ~ 0
+IS1
+Text Label 6450 2650 0    50   ~ 0
+IN1
+Text Label 6100 3050 0    50   ~ 0
+IN_SW1
+Text Label 7850 4500 0    50   ~ 0
+OUT2
+Text Label 7850 4800 0    50   ~ 0
+IS2
+Text Label 6450 4600 0    50   ~ 0
+IN2
+Text Label 6100 5000 0    50   ~ 0
+IN_SW2
+Text Label 7950 6500 0    50   ~ 0
+OUT3
+Text Label 7950 6800 0    50   ~ 0
+IS3
+Text Label 6450 6600 0    50   ~ 0
+IN3
+Text Label 6100 7000 0    50   ~ 0
+IN_SW3
+Text Label 7950 8550 0    50   ~ 0
+OUT4
+Text Label 7950 8850 0    50   ~ 0
+IS4
+Text Label 6450 8650 0    50   ~ 0
+IN4
+Text Label 6100 9050 0    50   ~ 0
+IN_SW4
+Text Label 4500 1350 0    50   ~ 0
+VIN_VBB
+Wire Wire Line
+	7450 2850 8300 2850
+Wire Wire Line
+	7750 2950 7750 2550
+Connection ~ 7750 2550
+Wire Wire Line
+	7750 2550 9750 2550
 $EndSCHEMATC
