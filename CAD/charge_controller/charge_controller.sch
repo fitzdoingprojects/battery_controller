@@ -1024,8 +1024,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 6300 7050 6400
 Wire Wire Line
-	6950 6200 6950 6300
-Wire Wire Line
 	6600 6200 6600 6300
 Wire Wire Line
 	6600 6300 6850 6300
@@ -1902,9 +1900,16 @@ F 3 "~" H 6950 6700 50  0001 C CNN
 	1    6950 6700
 	0    1    -1   0   
 $EndComp
-Connection ~ 7050 6300
-Connection ~ 6950 6300
 Wire Wire Line
-	6950 6300 6950 6400
-Connection ~ 6850 6300
+	6950 6200 6950 6400
+Text Label 4100 1150 0    50   ~ 0
+VIN
+Text Label 5000 1150 0    50   ~ 0
+VIN_FUSED
+Text Label 6000 1150 0    50   ~ 0
+VIN_BATT
+Text Label 9200 1600 0    50   ~ 0
+BATT_SENSE
+Text Label 5550 3250 0    50   ~ 0
+12V_O
 $EndSCHEMATC
